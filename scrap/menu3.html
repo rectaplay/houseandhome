@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Grid Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            width: 100%; /* Full width of the container */
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: grid;
+        }
+    </style>
+</head>
+<body class="bg-blue-600">
+
+    <div id="menu-container" class="absolute bg-teal-600 p-4">
+        <nav>
+            <ul class="flex space-x-12">
+				<li><a href="#" class="text-white">Shop By Brand</a></li>
+                <li><a href="#" class="text-white">Fridges</a></li>
+                <li><a href="#" class="text-white">Bed</a></li>
+                <li class="relative dropdown">
+                    <a href="#" class="text-white">Product</a>
+                    <div class="dropdown-content p-4 grid grid-cols-4 gap-4">
+                        <div>
+                            <h4 class="font-bold">Bedding</h4>
+                            <ul>
+                                <li>Airfryer</li>
+                                <li>Stoves</li>
+                                <li>Dish Washer</li>
+                                <li>Microwave</li>
+                                <li>Toaster</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Furniture</h4>
+                            <ul>
+                                <li>Airfryer</li>
+                                <li>Stoves</li>
+                                <li>Dish Washer</li>
+                                <li>Microwave</li>
+                                <li>Airfryer</li>
+                                <li>Stoves</li>
+                                <li>Toaster</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Electronics</h4>
+                            <ul>
+                                <li>Airfryer</li>
+                                <li>Stoves</li>
+                                <li>Dish Washer</li>
+                                <li>Microwave</li>
+                                <li>Toaster</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Audio</h4>
+                            <ul>
+                                <li>Airfryer</li>
+                                <li>Stoves</li>
+                                <li>Dish Washer</li>
+                                <li>Microwave</li>
+                                <li>Toaster</li>
+                                <li>Airfryer</li>
+                                <li>Stoves</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Utensils</h4>
+                            <ul>
+                                <li>Airfryer</li>
+                                <li>Stoves</li>
+                                <li>Dish Washer</li>
+                                <li>Microwave</li>
+                                <li>Toaster</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Tools</h4>
+                            <ul>
+                                <li>Airfryer</li>
+                                <li>Stoves</li>
+                                <li>Dish Washer</li>
+                                <li>Microwave</li>
+                                <li>Toaster</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#" class="text-white">Shop By Brand</a></li>
+                <li><a href="#" class="text-white">Fridges</a></li>
+                <li><a href="#" class="text-white">Bed</a></li>
+                <li><a href="#" class="text-white">Stove</a></li>
+                <li><a href="#" class="text-white">Dining</a></li>
+                <li><a href="#" class="text-white">Lounge</a></li>
+                <li><a href="#" class="text-white">Solar</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdown = document.querySelector('.dropdown');
+            const dropdownContent = document.querySelector('.dropdown-content');
+            const container = document.getElementById('menu-container');
+
+            dropdown.addEventListener('mouseenter', function() {
+                const containerRect = container.getBoundingClientRect();
+                const dropdownRect = dropdown.getBoundingClientRect();
+                
+                dropdownContent.style.left = `${containerRect.left}px`;
+                dropdownContent.style.width = `${containerRect.width}px`;
+            });
+
+            dropdown.addEventListener('mouseleave', function() {
+                dropdownContent.style.display = 'none';
+            });
+
+            dropdown.addEventListener('mouseover', function() {
+                dropdownContent.style.display = 'grid';
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House & Home</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+	<link href="./src/output.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+		.swiper-container .swiper-container2 .swiper-container3{
+		  position: relative;
+		}
+		
+		
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #fff;
+        }
+		
+		.swiper-button-prev2,
+        .swiper-button-next2 {
+            color: pink;
+        }
+		
+		.swiper-button-prev3,
+        .swiper-button-next3 {
+            color: pink;
+        }
+        
+		.carousel-pagination-div{
+			position: absolute;
+            bottom: 10%;
+            width: 100%;
+            text-align: center;
+		}
+
+        .ndiv {
+            position: absolute;
+            bottom: 50%;
+            width: 100%;
+            text-align: center;
+		}
+		.ndiv2{
+            position: absolute;
+            bottom: 50%;
+            width: 100%;
+            text-align: center;
+		}
+		.ndiv3{
+            position: absolute;
+            bottom: 50%;
+            width: 100%;
+            text-align: center;
+		}
+		
+		body{
+			overflow-x: hidden;
+		}
+		.swiper-pagination-bullet {
+			background: #fff;
+		}
+		
+		.bg-green-brand{
+		 background-color: #009674;
+		}
+    
+	
+	
+    </style>
+		
+        
+	<style>
+        .dropdown-content {
+			display: none;
+            z-index: -1000;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <header class="">
+        <div class=" bg-green-800 max-w-7xl mx-auto py-4 px-4 md:flex md:justify-between items-center" >
+			<div class="w-full flex items-center md:space-x-2 md:w-2/5 border border-gray-300">
+                <input type="text" placeholder="What are you looking for ..." class="w-full border border-gray-300 rounded p-2">
+                
+			</div>
+            <div class="hidden md:flex md:items-center space-x-4 bg-white py-2 px-2 rounded-50px" style="border-radius: 50px;">
+               
+				
+                <nav class="space-x-4">
+                    <a href="#" class="text-gray-700">About Us</a>
+                <a href="#" class="text-gray-700">Start Lay-By</a>
+                <a href="#" class="text-gray-700">Get Credit</a>
+                <a href="#" class="text-gray-700">Find A Store</a>
+                <a href="#" class="text-gray-700">Contact Us</a>
+                <a href="#" class="text-gray-700">Sign-In</a>
+                </nav>
+				
+				<a href="#" class="text-gray-700 bg-white space-x-6 ">
+                <span class="sr-only">View cart</span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l1.6-8H6.4M7 13h10a1 1 0 01.95 1.22l-1.18 5.29A2 2 0 0114.83 21H9.17a2 2 0 01-1.95-1.49l-1.18-5.29A1 1 0 017 13z" />
+                </svg>
+				</a>
+            </div>
+			
+            <!-- <div class="space-x-4">
+                
+            </div> -->
+           
+            
+        </div>
+		<div class=" bg-green-800 text-white max-w-7xl mx-auto py-4 px-4 flex justify-between items-center" >
+		<!-- <img src="https://www.houseandhome.co.za/media/logo/stores/1/2020-11-03.png" alt="House & Home Logo" class="h-10"> -->
+            <img src="logo.png" alt="House & Home Logo" class="h-10">
+                <nav  tabindex="0" class="md:block">
+				<ul class="flex-row md:flex md:space-x-5">
+					<li><a href="#" class="wide-grid-dropdown font-bold">Products<svg class="main-menu-caret inline w-2.5 h-2.5 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+                                    </svg></a></li>
+                    <li class="relative dropdown">
+						
+							<a href="#" class="font-bold">Shop By Brand<svg class="main-menu-caret inline w-2.5 h-2.5 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+                                    </svg></a>
+							<div class="absolute dropdown-content border bg-white p-4" style="display:none">
+							
+								
+								<ul class="py-2 text-gray-700">
+									<a><li class="w-36">Brand Name</li></a>
+									<li class="w-36">Brand Name</li>
+									<li class="w-36">Brand Name</li>
+									<li class="w-36">Brand Name</li>
+									<li class="w-36">Brand Name</li>
+									<li class="w-36">Brand Name</li>
+									<li class="w-36">Brand Name</li>
+								</ul>
+							
+							</div>
+						
+						
+					</li>
+					<li class="relative dropdown">
+						
+							<a href="#" class="font-bold">Shop By Room<svg class="main-menu-caret inline w-2.5 h-2.5 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"></path>
+                                    </svg></a>
+							<div class="absolute dropdown-content bg-white p-4" style="display:none">
+							
+								
+								<ul class="py-2  text-gray-700">
+									
+									<li class="w-36">Room type</li>
+									<li class="w-36">Room type</li>
+									<li class="w-36">Room type</li>
+									<li class="w-36">Room type</li>
+									<li class="w-36">Room type</li>
+									<li class="w-36">Room type</li>
+									<li class="w-36">Room type</li>
+									<li class="w-36">Room type</li>
+									<li class="w-36">Room type</li>
+									
+								</ul>
+							
+							</div>
+						
+						
+					</li>
+                    <li><a href="#" class="font-bold ">Fridges</a></li>
+                    <li><a href="#" class="font-bold ">Beds</a></li>
+                    <li><a href="#" class="font-bold ">Stoves</a></li>
+                    <li><a href="#" class="font-bold ">Dining</a></li>
+                    <li><a href="#" class="font-bold ">Lounge</a></li>
+                    <li><a href="#" class="font-bold ">Solar</a></li>
+                    <li><a href="#" class="font-bold ">Catalog</a></li>
+				<ul>
+                </nav>
+				<script>
+					document.addEventListener('DOMContentLoaded', function() {
+					
+						//implement single wide grid
+						const wideGridDropdown = document.querySelector('.wide-grid-dropdown');
+						const wideGridDropdownContent = document.querySelector('.wide-grid-dropdown-content');
+						const container = document.getElementById('wide-grid-menu');
+						
+						wideGridDropdown.addEventListener('click', function() {
+							// hide all other menus
+							dropdownContent.forEach(element => {
+									element.style.display = 'none';
+							});
+							
+							
+							// check if the menu is displayed first
+							wideGridDropdownContent.style.display === 'none' ? (
+								wideGridDropdownContent.style.zIndex = '5000',
+								wideGridDropdownContent.style.display = 'grid',
+								wideGridDropdownContent.style.gridRowGap = '20px',
+								wideGridDropdownContent.style.gridTemplateColumns = 'auto auto auto auto auto auto'
+							) : (
+								wideGridDropdownContent.style.display = 'none'
+							);
+							
+						});
+					    
+						//hide the menu once you lose focus 
+						wideGridDropdownContent.addEventListener('mouseleave', function() {
+						
+							wideGridDropdownContent.style.display = 'none';
+						});
+						
+						
+					
+						
+						
+						//implement multiple links with dropdown
+						const dropdownContent = document.querySelectorAll('.dropdown-content');
+						const linksWithDropdownContent = document.querySelectorAll('.dropdown a');
+						const linksWithDropdownCaret = document.querySelectorAll('.main-menu-caret');
+						
+						linksWithDropdownContent.forEach(element => {
+							element.addEventListener('click', eventHandler); 
+						});
+						
+						linksWithDropdownCaret.forEach(element => {
+							element.addEventListener('click', caretEventHandler); 
+						});
+
+						function caretEventHandler(event) {
+							event.preventDefault(); // Prevent the default behavior
+							console.log('on caret');
+							event.stopPropagation(); // Stop the event from propagating
+							const anchor = event.target.parentElement; // Get the parent a tag
+							if (anchor && anchor.tagName === 'A') { // Check if the parent is an a tag
+								anchor.click(); // Trigger the click event on the a tag
+							}
+						};
+						function eventHandler(event) {
+							// Your event handling logic here
+							
+							//clear widegrid dropdown first
+							wideGridDropdownContent.style.display = 'none';
+							
+							
+							
+							// check if the menu is displayed first
+							event.target.nextElementSibling.style.display === 'none' ? (
+							
+								// clear all other dropdown menus
+								dropdownContent.forEach(element => {
+								element.style.display = 'none';
+								}),
+								event.target.nextElementSibling.style.display = 'block',
+								event.target.nextElementSibling.style.zIndex ='2000',
+								console.log('Event triggered on', event.target)
+							) : (
+								event.target.nextElementSibling.style.display = 'none'
+							);
+														
+						}
+						
+						
+						dropdownContent.forEach(element => {
+							element.addEventListener('mouseleave', function() {
+							element.style.display = 'none';
+							});
+						});
+						
+						
+						
+						
+					});
+				</script>
+            
+			
+            
+           
+            
+        </div>
+		
+    </header>
+	
+    <main class="max-w-7xl mx-auto" style="overflow:hidden">
+	<div id="wide-grid-menu" class="absolute w-full" style="z-index:1000">
+		<div class="relative wide-grid-dropdown-content bg-white p-4" tabindex="1" style="display:none">
+						
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">PRODUCT TYPE 1</h4>
+				<ul>
+					<li><a href="https://google.com">Air fryer</a></li>
+					<li>Stoves</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Airfryerss</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Furniture</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Furniture</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div>
+				<h4 class="uppercase font-bold text-gray-600">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washere</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washere</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+					<li>ddfgghssssssssssss</li>
+					<li>Stoves</li>
+					<li>Dish Washere</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div >
+				<h4 class="uppercase font-bold text-gray-600">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Airfryers</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washere</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washere</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+        <div id="banner-swiper" class="swiper swiper-container border ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide relative bg-cover bg-center" style="background-image: url('https://omewomano.github.io/house-and-home/public/Assets/Carousel-img.png');height:500px">
+                    <div class="absolute inset-y-0 right-0 w-2/5 bg-pink-800 bg-opacity-60 flex items-center justify-left">
+                        <div class="text-left text-white px-4">
+                            <h1 class="text-4xl font-bold">Irresistible, long-lasting comfort at great prices</h1>
+                            <a href="#" class="mt-4 inline-block bg-green-800 shadow-10 text-white py-2 px-4 rounded hover:bg-green-600"style="border-radius: 50px;">View Sofas </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide relative bg-cover bg-center" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfypqegL9IPXD6t5oOEbNclH1mJowElUfuA&s');height:500px">
+                    <div class="absolute inset-y-0 right-0 w-2/5 bg-pink-800 bg-opacity-50 flex items-center justify-center">
+                        <div class="text-left text-white px-4">
+                            <h1 class="text-4xl font-bold">Sleep Good, increase Productivity...</h1>
+                            <a href="#" class="mt-4 inline-block bg-green-800 shadow text-white py-2 px-4 rounded hover:bg-green-600"style="border-radius: 50px;">View Beddings </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <!-- Add Pagination -->
+			<div class="carousel-pagination-div">
+				 <div class="swiper-pagination"></div>
+			</div>
+			<!-- Add Navigation -->
+			<div class="ndiv">
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			
+           
+            
+            
+        </div>
+		
+		<div id="benefits" class="bg-green-800 text-white">
+			<div class="grid grid-cols-4 py-5 px-4 md:flex md:justify-between">
+				
+				<div class="flex flex-col items-center md:flex-row md:space-x-2">
+				  <img src="coin.png" class="w-8 md:w-16 self-center md:self-start">
+				  <div class="flex flex-col items-center md:items-start">
+					<div class="font-bold text-xs md:text-xs self-center md:self-start" style="font-size: 0.6rem;">LOWEST PRICES</div>
+					<div class=" self-center text-xs md:text-xs md:self-auto" style="font-size: 0.6rem;">Guaranteed</div>
+				  </div>
+				</div>
+				<div class="flex flex-col items-center md:flex-row md:space-x-2">
+					<img src="verified.png" class="w-8 md:w-16 self-center md:self-start">
+					<div class="flex flex-col items-center md:items-start">
+						<div class="font-bold text-xs md:text-xs self-center md:self-start" style="font-size: 0.6rem;">HIGH QUALITY</div>
+						<div class=" self-center text-xs md:text-xs md:self-auto" style="font-size: 0.6rem;">Products</div>
+					</div>
+				</div>
+				<div class="flex flex-col items-center md:flex-row md:space-x-2">
+					<img src="calender.png" class="w-8 md:w-16 self-center md:self-start">
+					<div class="flex flex-col items-center md:items-start">
+						<div class="font-bold text-xs md:text-xs self-center md:self-start" style="font-size: 0.6rem;">LAY-BY</div>
+						<div class=" self-center text-xs md:text-xs md:self-auto" style="font-size: 0.6rem;">Up to 9  months</div>
+					</div>
+				</div>
+				<div class="flex flex-col items-center md:flex-row md:space-x-2">
+					<img src="zero.png" class="w-8 md:w-16 self-center md:self-start">
+					<div class="flex flex-col items-center md:items-start">
+						<div class="font-bold text-xs md:text-xs self-center md:self-start" style="font-size: 0.6rem;">ZERO DEPOSIT</div>
+						<div class=" self-center text-xs md:text-xs md:self-auto" style="font-size: 0.6rem;"><span class="hidden md:block">Purchase</span>For Civil servants</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- begin Trending Products-->
+		<div class="max-w-7xl px-4 py-4 mx-auto mt-8">
+			<div class="flex mb-4 mx-auto justify-between ">
+			  <h1 class="text-2xl font-semibold">Trending Products</h1>
+			  <a href="#" class="text-green-800 font-bold ">See all</a>
+			  <!-- <button class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded mt-4">See All</button> -->
+			</div>
+			<div class="swiper swiper-container swiper-container2">
+			  <div class="swiper-wrapper">
+				<!-- First Slide -->
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded border-2 border-green-800 overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/trnding-product3.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending-product2.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/wardrobe.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<!-- Repeat the above blocks for each product in the second slide -->
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/trnding-product3.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending-product2.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/wardrobe.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Add Pagination -->
+			  <div class=" swiper-pagination swiper-pagination2"></div>
+			  <!-- Add Navigation -->
+			  <div class="ndiv2">
+				  <div class="swiper-button-next swiper-button-next2"></div>
+				  <div class="swiper-button-prev swiper-button-prev2"></div>
+			  </div>
+			</div>
+		<div class="swiper swiper-container swiper-container3">
+		  <div class="swiper-wrapper">
+			<!-- First Slide -->
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded border-2 border-green-800 overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/trnding-product3.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending-product2.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/wardrobe.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<!-- Repeat the above blocks for each product in the second slide -->
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/trnding-product3.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending-product2.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/wardrobe.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Add Pagination -->
+		  <div class="swiper-pagination swiper-pagination3"></div>
+		  <!-- Add Navigation -->
+		  <div class="ndiv3">
+			  <div class="swiper-button-next swiper-button-next3"></div>
+			  <div class="swiper-button-prev swiper-button-prev3"></div>
+		  </div>
+		</div>
+		</div>
+        <!-- Begin Hot Deals -->
+		<div class="max-w-7xl px-4 py-4 mx-auto mt-8 bg-gray-200">
+			<div class="flex mb-4 mx-auto justify-between ">
+			  <h1 class="text-2xl font-semibold">Hot Deals</h1>
+			  <a href="#" class="text-green-800 font-bold ">See all</a>
+			  <!-- <button class="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded mt-4">See All</button> -->
+			</div>
+			<div class="swiper swiper-container swiper-container2">
+			  <div class="swiper-wrapper">
+				<!-- First Slide -->
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded border-2 border-green-800 overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/trnding-product3.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending-product2.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/wardrobe.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<!-- Repeat the above blocks for each product in the second slide -->
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/trnding-product3.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending-product2.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/wardrobe.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+				<div class="swiper-slide">
+				  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+					<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending.png" alt="Mekaz 9 Piece Dining Room Suite">
+					<div class="px-6 py-4">
+					  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+					  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+					  <p class="text-green-800 font-bold text-base">$204.00</p>
+					  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  <!-- Add Pagination -->
+			  <div class=" swiper-pagination swiper-pagination2"></div>
+			  <!-- Add Navigation -->
+			  <div class="ndiv2">
+				  <div class="swiper-button-next swiper-button-next2"></div>
+				  <div class="swiper-button-prev swiper-button-prev2"></div>
+			  </div>
+			</div>
+		<div class="swiper swiper-container swiper-container3">
+		  <div class="swiper-wrapper">
+			<!-- First Slide -->
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded border-2 border-green-800 overflow-hidden shadow-lg m-4" style="border-radius:50px">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/trnding-product3.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending-product2.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/wardrobe.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<!-- Repeat the above blocks for each product in the second slide -->
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/trnding-product3.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending-product2.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/wardrobe.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+			<div class="swiper-slide">
+			  <div class="max-w-sm rounded overflow-hidden shadow-lg m-4">
+				<img class="w-full" src="https://omewomano.github.io/house-and-home/public/Assets/Trending.png" alt="Mekaz 9 Piece Dining Room Suite">
+				<div class="px-6 py-4">
+				  <div class="font-regular text-l mb-2">Mekaz 9 Piece Dining Room Suite</div>
+				  <p class="text-red-500 font-bold text-base  line-through">$204.00</p>
+				  <p class="text-green-800 font-bold text-base">$204.00</p>
+				  <button class="bg-green-800 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Add to Cart</button>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- Add Pagination -->
+		  <div class="swiper-pagination swiper-pagination3"></div>
+		  <!-- Add Navigation -->
+		  <div class="ndiv3">
+			  <div class="swiper-button-next swiper-button-next3"></div>
+			  <div class="swiper-button-prev swiper-button-prev3"></div>
+		  </div>
+		</div>
+		
+		
+		</div>
+		<div class="container my-20">
+		<!-- Start Brand Images Slider -->
+		<p class="text-green-800 text-4xl font-bold text-center">'A lifestyle worth living' brands</p>
+		<div class="w-4/5 mx-auto">
+			<div class="swiper swiper-container swiper-container-brands ">
+			<div class="swiper-wrapper ">
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand2.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand1.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide  max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand4.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand5.png" alt="Brand 1">
+				</div>
+				
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand1.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand4.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand5.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand2.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand1.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand4.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand5.png" alt="Brand 1">
+				</div>
+				<div class="swiper-slide max-w-32 h-32 content-center	">
+					<img src="https://omewomano.github.io/house-and-home/public/Assets/brand2.png" alt="Brand 1">
+				</div>
+				
+			
+				
+					
+				
+				
+				<!-- Add more slides as needed -->
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination swiper-pagination-brands"></div>
+			<!-- Add Navigation -->
+			
+			<div class="swiper-button-next swiper-button-next-brands"></div>
+			<div class="swiper-button-prev swiper-button-prev-brands"></div>
+			</div>
+		</div>
+		</div>
+    </main>
+	<footer>
+	 <div id="" class=" w-full bg-green-800" style="z-index:1000">
+		<div class="flex-row md:flex md:justify-between  text-white pl-6 pt-6 pr-6 pb-11" tabindex="1" >
+						
+			<div class="pb-8 pr-6 " >
+				<h4 class="uppercase font-bold mb-4">PRODUCT TYPE 1</h4>
+				<ul>
+					<li><a href="https://google.com">Air fryer</a></li>
+					<li>Stoves</li>
+					<li>Dish Washerrrrrrrrrrrrrrrrrrrrrrrr</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div >
+			<div  class="pb-8 pr-6 ">
+				<h4 class="uppercase font-bold mb-4">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Airfryerss</li>
+					<li>Dish Washed gggfr</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+					<li>Airfryer</li>
+					<li>Airfryerss</li>
+					<li>Dish Washer</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div class="pb-8 pr-6 " >
+				<h4 class="uppercase font-bold mb-4">Bedding</h4>
+				<ul>
+					<li>Airfryer</li>
+					<li>Stoves</li>
+					<li>Dish Washe dfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfr</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+					<li>Airfryer</li>
+					<li>Airfryerss</li>
+					<li>Dish Washer ewrryterbytee dfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf</li>
+					<li>Microwave</li>
+					<li>Toaster</li>
+				</ul>
+			</div>
+			<div class="pb-8 pr-6 " >
+				<h1 class=" font-bold mb-4">Sign up to our newsletter for updates
+				on promotions and new products:</h1>
+				<input type="text" placeholder="Enter email address" class="w-full border border-gray-300 rounded p-2 mb-6">
+				<h2 class="font-bold">FOLLOW US ON SOCIAL MEDIA</h2>
+				<ul class="flex mb-6">
+					<li ><img src="facebook-48.png"></li>
+					<li ><img src="linkedin-48.png"></li>
+					<li ><img src="instagram-48.png"></li>
+					<li ><img src="facebook-48.png"></li>
+					
+				</ul>
+			</div>
+			
+		</div>
+	</div>	
+	</footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('#banner-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+			autoplay: {
+	   delay: 5000,
+	 },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+	<script>
+    var swiper2 = new Swiper('.swiper-container2', {
+      slidesPerView: 2,
+      spaceBetween: 1,
+      
+      loop: true,
+	  autoplay: {
+	   delay: 5000,
+	 },
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next2',
+        prevEl: '.swiper-button-prev2',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        1024: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
+      },
+    });
+	 var swiper3 = new Swiper('.swiper-container3', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      slidesPerGroup: 4,
+      loop: true,
+	  speed:10000,
+	  autoplay: {
+		   delay: 5000,
+		 },
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination3',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next3',
+        prevEl: '.swiper-button-prev3',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        768: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        1024: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
+      },
+    });
+  </script>
+  <script>
+    var swiper4 = new Swiper('.swiper-container-brands', {
+        slidesPerView: 4,
+        spaceBetween: 20,
+		slidesPerGroup: 4,
+		loop:true,
+		navigation: {
+			nextEl: '.swiper-button-next-brands',
+			prevEl: '.swiper-button-prev-brands',
+		},
+        breakpoints: {
+        640: {
+          slidesPerView: 6,
+          slidesPerGroup: 6,
+        },
+        768: {
+          slidesPerView: 6,
+          slidesPerGroup: 6,
+        },
+        1024: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
+      },
+        
+    });
+</script>
+	<style>
+		
+	</style>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!-- menu.component.html -->
+<div class="{{menuContainerClasses}}">
+    <div class="{{headerClasses}}">
+      <h2 class="{{titleClasses}}">Menu</h2>
+      <button (click)="closeMenu()" class="{{closeButtonClasses}}">&times;</button>
+    </div>
+    <ul class="{{listClasses}}">
+      <li *ngFor="let item of menuItems" class="{{listItemClasses}}">
+        <button class="{{buttonClasses}}" (click)="toggleSubMenu(item)">
+          <span>{{item.name}}</span>
+          <span class="{{arrowClasses}}">&darr;</span>
+        </button>
+        <ul *ngIf="item.subMenuOpen" class="{{subMenuClasses}}">
+          <li *ngFor="let subItem of item.subMenu" class="{{subMenuItemClasses}}">{{subItem}}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  // menu.component.ts
+  import { Component } from '@angular/core';
+  
+  const menuContainerClasses = 'w-full max-w-xs mx-auto bg-white border rounded-lg shadow-lg overflow-hidden';
+  const headerClasses = 'p-4 flex justify-between items-center border-b';
+  const titleClasses = 'text-lg font-semibold';
+  const closeButtonClasses = 'text-xl';
+  const listClasses = 'divide-y';
+  const listItemClasses = 'group';
+  const buttonClasses = 'w-full flex justify-between items-center p-4 hover:bg-zinc-100';
+  const arrowClasses = 'transform group-hover:rotate-180';
+  const subMenuClasses = 'pl-8 py-2 space-y-2';
+  const subMenuItemClasses = '';
+  
+  @Component({
+    selector: 'app-menu',
+    templateUrl: './menu.component.html',
+    styleUrls: ['./menu.component.css']
+  })
+  export class MenuComponent {
+    menuContainerClasses = menuContainerClasses;
+    headerClasses = headerClasses;
+    titleClasses = titleClasses;
+    closeButtonClasses = closeButtonClasses;
+    listClasses = listClasses;
+    listItemClasses = listItemClasses;
+    buttonClasses = buttonClasses;
+    arrowClasses = arrowClasses;
+    subMenuClasses = subMenuClasses;
+    subMenuItemClasses = subMenuItemClasses;
+  
+    menuItems = [
+      { name: 'Mobile', subMenuOpen: false, subMenu: [] },
+      { name: 'Wi-Fi', subMenuOpen: false, subMenu: [] },
+      { name: 'Tv', subMenuOpen: false, subMenu: [] },
+      { name: 'Combo Subscription', subMenuOpen: false, subMenu: [] },
+      { name: 'Devices', subMenuOpen: false, subMenu: ['Ethernet', 'Bluetooth', 'Cable'] }
+    ];
+  
+    toggleSubMenu(item) {
+      item.subMenuOpen = !item.subMenuOpen;
+    }
+  
+    closeMenu() {
+      // Add functionality to close the menu
+    }
+  }
+  
+  /* menu.component.css */
+  /* Add any necessary styles here */
+  
+  In this Angular component, the HTML structure has been converted into an Angular component with corresponding TypeScript logic. The component uses Angular's event binding and ngFor directive to handle menu items and submenus. Tailwind CSS classes are stored in constants for reusability and maintainability.
